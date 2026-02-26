@@ -2,80 +2,89 @@
 <html>
 <head>
     <title>Student Portfolio</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            margin: 0;
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
             font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
         }
 
-        header {
-            background: #ffffff;
-            padding: 25px;
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        body{
+            background:#f4f7fb;
+            color:#333;
+            line-height:1.6;
         }
 
-        section {
-            padding: 30px;
-            margin: 20px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        header{
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:25px;
         }
 
-        h2 {
-            color: #0077cc;
-            border-bottom: 2px solid #0077cc;
-            padding-bottom: 5px;
+        section{
+            background:white;
+            margin:30px auto;
+            padding:25px;
+            width:85%;
+            border-radius:8px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.08);
         }
 
-        ul {
-            line-height: 1.8;
+        h2{
+            color:#2c3e50;
+            margin-bottom:15px;
+            border-bottom:2px solid #3498db;
+            padding-bottom:5px;
         }
 
-        .project-card {
-            background: #f9fbfd;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            border-left: 5px solid #0077cc;
+        h3{
+            margin-top:15px;
+            color:#34495e;
         }
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #ffffff;
-            margin-top: 20px;
-            font-size: 14px;
-            color: #777;
+        ul{
+            margin-left:20px;
+            margin-top:10px;
         }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#2c3e50;
+            color:white;
+            margin-top:40px;
+        }
+
+        @media(max-width:768px){
+            section{
+                width:95%;
+            }
+        }
+
     </style>
 </head>
-
 <body>
 
 <header>
-    Student Portfolio
+    <h1>Student Portfolio</h1>
 </header>
 
 <section>
-    <h2>Student Profile</h2>
-    <p><strong>Name:</strong> Shalini S</p>
-    <p><strong>Roll No:</strong> RA2411003050243</p>
-    <p><strong>Email:</strong> shalusasi261@gmail.com</p>
-    <p><strong>Skills:</strong> Python, C, Java</p>
+    <h2>Section 1 - Student Profile</h2>
+    <p><b>Name:</b> Shalini S</p>
+    <p><b>Roll No:</b> RA2411003050243</p>
+    <p><b>Email:</b> shalusasi261@gmail.com</p>
+    <p><b>Skill:</b> Python, C, Java</p>
 </section>
 
 <section>
-    <h2>Academic Details</h2>
-    <p><strong>Semester Result:</strong> 8.05</p>
-
-    <h3>Courses:</h3>
+    <h2>Section 2 - Academic Details</h2>
+    <p><b>Semester Result:</b> 8.05</p>
+    <h3>Courses Name:</h3>
     <ul>
         <li>Design and Analysis of Algorithms</li>
         <li>Database Management System</li>
@@ -85,44 +94,58 @@
 </section>
 
 <section>
-    <h2>Projects</h2>
+    <h2>Section 3 - Projects</h2>
 
-    <div class="project-card">
-        <h3>IoT Based Smart Water Tank Level Monitoring and Alert System</h3>
-        <p>
-            The system automatically monitors water levels using an ultrasonic sensor and ESP32 microcontroller. 
-            It prevents overflow, water shortage, and motor damage. Water levels are displayed on an OLED screen 
-            and sent to a smartphone via Wi-Fi. Alerts are generated at minimum and maximum levels, ensuring 
-            efficient water management.
-        </p>
-        <p><strong>Tools Used:</strong> ESP32, Ultrasonic Sensor, OLED Display, Wi-Fi (inbuilt), IoT Mobile Application</p>
-    </div>
+    <h3>1. IoT Based Smart Water Tank Level Monitoring and Alert System</h3>
+    <p>
+        The system monitors water levels using an ultrasonic sensor and ESP32 microcontroller. 
+        It prevents overflow and shortage by sending real-time alerts through Wi-Fi. 
+        Water levels are displayed on an OLED screen and smartphone app. 
+        This is a low-cost and efficient water management solution.
+    </p>
 
-    <div class="project-card">
-        <h3>Automatic Identification and Classification of Skin Lesion Images Using Deep Learning</h3>
-        <p>
-            This project detects skin cancer using Convolutional Neural Networks (CNNs). 
-            The model classifies skin lesions as benign or malignant using dermoscopic images 
-            from datasets like HAM10000. It achieves 92–95% accuracy and helps in early cancer detection.
-        </p>
-        <p><strong>Tools Used:</strong> Python, CNN, HAM10000 Dataset, Data Preprocessing Techniques, Deep Learning Frameworks</p>
-    </div>
+    <h4>Tools Used:</h4>
+    <ul>
+        <li>ESP32 Microcontroller</li>
+        <li>Ultrasonic Sensor</li>
+        <li>OLED Display</li>
+        <li>Wi-Fi Module (Inbuilt in ESP32)</li>
+        <li>IoT Mobile Application</li>
+    </ul>
+
+    <br>
+
+    <h3>2. Automatic Identification and Classification of Skin Lesion Images Using Deep Learning</h3>
+    <p>
+        This project detects skin cancer using Convolutional Neural Networks (CNN). 
+        The model is trained using HAM10000 dataset and classifies lesions as benign or malignant. 
+        It achieves 92–95% accuracy and supports early cancer detection.
+    </p>
+
+    <h4>Model Evaluation:</h4>
+    <ul>
+        <li>Accuracy: 92–95%</li>
+        <li>Precision: 93%</li>
+        <li>Recall: 91%</li>
+        <li>F1-Score: 92%</li>
+        <li>ROC-AUC: 0.96</li>
+    </ul>
 
 </section>
 
 <section>
-    <h2>Certification Courses</h2>
+    <h2>Section 4 - Certification Courses</h2>
     <ul>
         <li>The Sustainable Development Goals - A Global Transdisciplinary Vision of the Future (Coursera)</li>
         <li>Introduction to Generative AI for Developers with Copilot (Coursera)</li>
         <li>Active Listening: Enhancing Communication Skill (Coursera)</li>
         <li>Introduction to Visual Basic Programming (Coursera)</li>
-        <li>Introduction to Prompt Engineering (Simplilearn Skill)</li>
+        <li>Introduction to Prompt Engineering (Simplilearn)</li>
     </ul>
 </section>
 
 <section>
-    <h2>Internship</h2>
+    <h2>Section 5 - Internship</h2>
     <ul>
         <li>Eduskill - Java Full Stack Developer Virtual Internship</li>
         <li>Eduskill - Android Developer Virtual Internship</li>
@@ -130,16 +153,13 @@
 </section>
 
 <section>
-    <h2>Achievements</h2>
-    <ul>
-        <li>Participated in Hackathon</li>
-        <li>CODECRAFT 25 Hackathon</li>
-        <li>Noobfest Startup Hackathon</li>
-    </ul>
+    <h2>Section 6 - Achievements</h2>
+    <p><b>Awards:</b> Participated in Hackathon</p>
+    <p><b>Competitions:</b> CODECRAFT 25 HACKATHON, Noobfest Startup Hackathon</p>
 </section>
 
 <footer>
-    © 2026 Student Portfolio
+    © 2026 Student Portfolio | All Rights Reserved
 </footer>
 
 </body>
